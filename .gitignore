@@ -172,6 +172,7 @@
 !/wp-content/themes/generatepress_child/functions.php
 !/wp-content/themes/generatepress_child/style.css
 # Local files are intentionally never distributed.
+!/docs/examples/homepage-preview.png
 .package-sync*.json
 .local/
 __pycache__/

@@ -5,6 +5,10 @@ bearbeitbare GenerateBlocks-Sektionen für WordPress erstellt. Enthalten sind
 Projektregeln, spezialisierte Skills, 15 technische Referenzen, Prüfskripte,
 eine ausführliche Beispiel-Anleitung und ein GeneratePress Child Theme.
 
+![Beispiel einer GenerateBlocks-Startseite mit Navigation, dunkelblauem Hero und dem Button „Installation & Nutzung“](docs/examples/homepage-preview.png)
+
+*Beispielansicht der lokalen WordPress-Website mit GenerateBlocks.*
+
 **Installation:** Den gesamten Paketinhalt direkt in den Hauptordner einer
 bestehenden WordPress-Installation kopieren. Der Ordnername ist frei wählbar.
 Es gibt keine fest eingebauten Benutzerpfade und keine zentrale Installation der
