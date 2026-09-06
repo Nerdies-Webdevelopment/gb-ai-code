@@ -1,0 +1,289 @@
+{
+  "schema_version": 1,
+  "generated_from_supplied_reference_index": true,
+  "runtime_validation_policy": "Do not promote to validated without explicit runtime evidence.",
+  "references": [
+    {
+      "id": "vertical-tabs01",
+      "family": "tabs",
+      "role": "primary",
+      "file": "references/tabs/vertical-tabs01.html",
+      "status": "technical_reference",
+      "runtime_validation": "unconfirmed",
+      "best_for": [
+        "tabs hierarchy",
+        "tabs menu/items",
+        "state/ARIA relationships",
+        "save structure"
+      ],
+      "do_not_copy": [
+        "vertical layout",
+        "local URLs",
+        "colors",
+        "fixed container width"
+      ]
+    },
+    {
+      "id": "faq01",
+      "family": "accordion",
+      "role": "primary",
+      "file": "references/accordion/faq01.html",
+      "status": "technical_reference",
+      "runtime_validation": "unconfirmed",
+      "best_for": [
+        "accordion hierarchy",
+        "toggle/content",
+        "FAQ schema pattern",
+        "focus states"
+      ],
+      "do_not_copy": [
+        "copy",
+        "colors",
+        "fixed container width",
+        "spacing"
+      ]
+    },
+    {
+      "id": "faq-accordion01",
+      "family": "accordion",
+      "role": "supplementary",
+      "file": "references/accordion/faq-accordion01.html",
+      "status": "technical_reference",
+      "runtime_validation": "unconfirmed",
+      "best_for": [
+        "image plus accordion composition",
+        "FAQPage markup"
+      ],
+      "do_not_copy": [
+        "768px breakpoint",
+        "fixed container width",
+        "placeholder image",
+        "geometry"
+      ]
+    },
+    {
+      "id": "carousel03",
+      "family": "carousel",
+      "role": "primary",
+      "file": "references/carousel/carousel03.html",
+      "status": "technical_reference",
+      "runtime_validation": "unconfirmed",
+      "best_for": [
+        "carousel hierarchy",
+        "items",
+        "pagination",
+        "responsive slider structure"
+      ],
+      "do_not_copy": [
+        "copy",
+        "colors",
+        "fixed container width",
+        "local design values"
+      ]
+    },
+    {
+      "id": "query-loop01",
+      "family": "query",
+      "role": "primary_dynamic_carousel",
+      "file": "references/query/query-loop01.html",
+      "status": "technical_reference",
+      "runtime_validation": "unconfirmed",
+      "best_for": [
+        "query attributes",
+        "looper",
+        "dynamic cards",
+        "query plus carousel"
+      ],
+      "do_not_copy": [
+        "query parameters",
+        "copy",
+        "fixed container width"
+      ]
+    },
+    {
+      "id": "post-grid01",
+      "family": "query",
+      "role": "primary_grid",
+      "file": "references/query/post-grid01.html",
+      "status": "technical_reference",
+      "runtime_validation": "unconfirmed",
+      "best_for": [
+        "query block",
+        "looper",
+        "loop item",
+        "responsive post grid"
+      ],
+      "do_not_copy": [
+        "query parameters",
+        "colors",
+        "fixed container width"
+      ]
+    },
+    {
+      "id": "pricing01",
+      "family": "pricing",
+      "role": "preferred_button_reference",
+      "file": "references/pricing/pricing01.html",
+      "status": "technical_reference",
+      "runtime_validation": "unconfirmed",
+      "best_for": [
+        "classic GenerateBlocks button",
+        "blockVersion 4 example",
+        "pricing cards",
+        "CTA structure"
+      ],
+      "do_not_copy": [
+        "prices",
+        "products",
+        "copy",
+        "colors",
+        "fixed container width"
+      ]
+    },
+    {
+      "id": "table01",
+      "family": "table",
+      "role": "primary",
+      "file": "references/table/table01.html",
+      "status": "technical_reference",
+      "runtime_validation": "unconfirmed",
+      "best_for": [
+        "responsive table",
+        "desktop/mobile variants",
+        "roles"
+      ],
+      "do_not_copy": [
+        "table data",
+        "colors",
+        "fixed container width"
+      ]
+    },
+    {
+      "id": "contactblock13",
+      "family": "contact",
+      "role": "layout_reference",
+      "file": "references/contact/contactblock13.html",
+      "status": "layout_reference",
+      "runtime_validation": "unconfirmed",
+      "best_for": [
+        "two-column content/form composition",
+        "form embedding surroundings"
+      ],
+      "do_not_copy": [
+        "1200px width",
+        "form IDs",
+        "content",
+        "colors"
+      ]
+    },
+    {
+      "id": "hero03",
+      "family": "hero",
+      "role": "primary",
+      "file": "references/hero/hero03.html",
+      "status": "visual_technical_reference",
+      "runtime_validation": "unconfirmed",
+      "best_for": [
+        "complex hero geometry",
+        "pseudo-elements",
+        "responsive background treatment"
+      ],
+      "do_not_copy": [
+        "decorations",
+        "colors",
+        "min heights",
+        "fixed container width"
+      ]
+    },
+    {
+      "id": "contentblock04",
+      "family": "content",
+      "role": "primary",
+      "file": "references/content/contentblock04.html",
+      "status": "visual_technical_reference",
+      "runtime_validation": "unconfirmed",
+      "best_for": [
+        "gradient background",
+        "pseudo-elements",
+        "text container"
+      ],
+      "do_not_copy": [
+        "colors",
+        "fixed container width",
+        "copy"
+      ]
+    },
+    {
+      "id": "feature01",
+      "family": "feature",
+      "role": "primary",
+      "file": "references/feature/feature01.html",
+      "status": "visual_technical_reference",
+      "runtime_validation": "unconfirmed",
+      "best_for": [
+        "gradient panel",
+        "shape block",
+        "responsive panel geometry"
+      ],
+      "do_not_copy": [
+        "brand colors",
+        "fixed heights",
+        "fixed container width"
+      ]
+    },
+    {
+      "id": "cta03",
+      "family": "cta",
+      "role": "primary",
+      "file": "references/cta/cta03.html",
+      "status": "core_reference",
+      "runtime_validation": "unconfirmed",
+      "best_for": [
+        "responsive CTA composition",
+        "grid/flex transitions"
+      ],
+      "do_not_copy": [
+        "copy",
+        "colors",
+        "fixed container width"
+      ]
+    },
+    {
+      "id": "process01",
+      "family": "process",
+      "role": "primary",
+      "file": "references/process/process01.html",
+      "status": "core_reference",
+      "runtime_validation": "unconfirmed",
+      "best_for": [
+        "repeated cards",
+        "responsive grid",
+        "numbered process"
+      ],
+      "do_not_copy": [
+        "copy",
+        "colors",
+        "fixed container width"
+      ]
+    },
+    {
+      "id": "instantvolt-footer-hover01",
+      "family": "footer",
+      "role": "special",
+      "file": "references/footer/instantvolt-footer-hover01.html",
+      "status": "special_reference",
+      "runtime_validation": "unconfirmed",
+      "best_for": [
+        "link hover/focus effects",
+        "footer composition"
+      ],
+      "do_not_copy": [
+        "font family",
+        "brand values",
+        "URLs",
+        "media IDs",
+        "fixed container width"
+      ]
+    }
+  ]
+}

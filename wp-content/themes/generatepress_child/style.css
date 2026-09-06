@@ -1,0 +1,112 @@
+/*
+ Theme Name:   GeneratePress Child
+ Theme URI:    https://generatepress.com
+ Description:  GeneratePress child theme with shared frontend/editor GenerateBlocks project tokens.
+ Author:       Project customization
+ Template:     generatepress
+ Version:      0.4
+ Text Domain:  generatepress-child
+*/
+
+/* =========================================================
+   Project design tokens
+   ========================================================= */
+
+:root {
+	--gb-container-width: 1280px;
+
+	--fs-h1: clamp(2.15rem, 1.625rem + 2.625vi, 3.6rem);
+	--fs-h2: clamp(1.75rem, 1.4045rem + 1.7273vi, 2.7rem);
+	--fs-h3: clamp(1.45rem, 1.1591rem + 1.4545vi, 2.25rem);
+	--fs-h4: clamp(1.25rem, 1.05rem + 1vi, 1.8rem);
+	--fs-h5: clamp(1.1rem, 0.9545rem + 0.7273vi, 1.5rem);
+	--fs-h6: clamp(1rem, 0.8727rem + 0.6364vi, 1.35rem);
+	--fs-p: clamp(0.95rem, 0.9318rem + 0.0909vi, 1rem);
+}
+
+/* =========================================================
+   Semantic heading defaults
+
+   Element-only specificity intentionally stays below a
+   GenerateBlocks unique class such as .gb-text-abc123.
+   ========================================================= */
+
+body :where(h1) {
+	font-size: var(--fs-h1);
+}
+
+body :where(h2) {
+	font-size: var(--fs-h2);
+}
+
+body :where(h3) {
+	font-size: var(--fs-h3);
+}
+
+body :where(h4) {
+	font-size: var(--fs-h4);
+}
+
+body :where(h5) {
+	font-size: var(--fs-h5);
+}
+
+body :where(h6) {
+	font-size: var(--fs-h6);
+}
+
+body :where(p) {
+	font-size: var(--fs-p);
+}
+
+/* =========================================================
+   Explicit typography utility classes
+
+   body :where() gives defaults and utilities specificity (0,0,1).
+   Utilities follow all semantic defaults, so an explicit size wins.
+   A native block class has higher specificity (0,1,0) in either load order.
+   They provide project defaults without fighting intentional
+   local GenerateBlocks unique-class typography.
+
+   Semantic hierarchy and visual size remain independent.
+   Example: an h2 may intentionally use .fs-h1.
+   ========================================================= */
+
+body :where(.fs-h1) {
+	font-size: var(--fs-h1);
+}
+
+body :where(.fs-h2) {
+	font-size: var(--fs-h2);
+}
+
+body :where(.fs-h3) {
+	font-size: var(--fs-h3);
+}
+
+body :where(.fs-h4) {
+	font-size: var(--fs-h4);
+}
+
+body :where(.fs-h5) {
+	font-size: var(--fs-h5);
+}
+
+body :where(.fs-h6) {
+	font-size: var(--fs-h6);
+}
+
+/* =========================================================
+   GenerateBlocks button / paragraph utility defaults
+   ========================================================= */
+
+
+/*
+ * Keep explicit utility/button defaults deliberately weak so
+ * block-local GenerateBlocks CSS can override them when a
+ * constrained component needs a justified local font size.
+ */
+body :where(.fs-p),
+body :where(.gb-button) {
+	font-size: var(--fs-p);
+}
