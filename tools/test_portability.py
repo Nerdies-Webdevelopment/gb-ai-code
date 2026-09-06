@@ -11,7 +11,7 @@ class PortabilityTests(unittest.TestCase):
     def setUp(self):
         temp = tempfile.TemporaryDirectory()
         self.addCleanup(temp.cleanup)
-        self.root = Path(temp.name) / 'Different WordPress Name'
+        self.root = Path(temp.name).resolve() / 'Different WordPress Name'
         self.root.mkdir()
 
     def test_sync_has_no_machine_default_destination(self):

@@ -9,4 +9,5 @@
 - Nativen Anleitungs-Export an beliebige Website-Unterordner anpassen.
 - Git-Abgrenzung für reine Paketdateien und GitHub-Workflow für Windows/Linux.
 - Neue Tests für fremde Installationsnamen, Profile, Sync-Konfiguration und Exportpfade.
+- Windows-Kurzpfade vor Transaktionspfad-Vergleichen normalisieren.
 - Release 3.2.0 mit SHA-256; Child Theme unverändert 0.4.

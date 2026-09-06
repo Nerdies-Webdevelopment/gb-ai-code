@@ -94,6 +94,7 @@ def exclusive(destination):
 
 
 def transaction_path(destination):
+    destination = destination.resolve()
     path = destination.parent / ('.' + destination.name + '.package-sync-transaction')
     if path.is_symlink() or path.resolve().parent != destination.parent:
         raise ValueError('External transaction directory')

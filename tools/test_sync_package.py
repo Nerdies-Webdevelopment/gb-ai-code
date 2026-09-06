@@ -40,6 +40,10 @@ class PackageSyncTests(unittest.TestCase):
         self.assertEqual(len(synchronize(self.source, self.destination)), 2)
         self.assertFalse(self.destination.exists())
 
+    def test_transaction_path_accepts_equivalent_spelling(self):
+        alias = self.destination.parent / 'unused' / '..' / self.destination.name
+        self.assertEqual(sync.transaction_path(alias), sync.transaction_path(self.destination))
+
     def prepare_update(self):
         synchronize(self.source, self.destination, True)
         (self.source / 'README.md').write_text('second', encoding='utf-8')
