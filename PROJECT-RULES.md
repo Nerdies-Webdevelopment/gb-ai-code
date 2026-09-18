@@ -256,15 +256,112 @@ Decorative images MUST use empty alt text.
 
 MUST NOT copy localhost/final foreign upload paths as portable project media without explicit intent.
 
-## GB-SHAPE-001 — Decorative elements
+## GB-SHAPE-001 — Shapes und Icons
 
-Decorative shapes MAY use `generateblocks/shape` or local pseudo-elements.
+### Dekorative SVG-Geometrie
 
-Decorative elements SHOULD use `pointer-events:none`.
+Sichtbare dekorative Formen aus einer visuellen Referenz wie:
 
-Decorative SVGs SHOULD be hidden from assistive technology with appropriate attributes.
+- handgezeichnete Unterstreichungen
+- Scribbles
+- geschwungene Linien
+- Wellen
+- Pfeile
+- dekorative Trenner
+- organische Konturen
+- komplexe asymmetrische Formen
 
-MUST NOT add external icon CDNs.
+MÜSSEN bevorzugt als nativer:
+
+```text
+generateblocks/shape
+```
+
+Block mit inline SVG umgesetzt werden.
+
+Wenn die Referenz eine konkrete SVG-Geometrie erkennen lässt oder aus bereitgestelltem HTML / DOM / Quellcode ein SVG-Pfad verfügbar ist, muss diese Geometrie möglichst direkt übernommen werden.
+
+Bevorzugte Struktur:
+
+```text
+lokaler position:relative Parent
+├── generateblocks/shape
+└── sichtbarer Inhalt
+```
+
+Das Shape wird relativ zu seinem lokalen Parent positioniert.
+
+Dekorative SVGs verwenden:
+
+```text
+aria-hidden="true"
+focusable="false"
+pointer-events:none
+```
+
+Das SVG muss inline im gespeicherten GenerateBlocks-Shape-Markup enthalten sein.
+
+Für responsive dekorative Linien darf verwendet werden:
+
+```html
+preserveAspectRatio="none"
+```
+
+wenn die Form laut visueller Referenz horizontal mit dem Zielbereich mitwachsen soll.
+
+Die sichtbare SVG-Geometrie wird über:
+
+```text
+viewBox
+path
+width
+height
+position
+color
+```
+
+an die Referenz angepasst.
+
+### Keine CSS-Approximation komplexer Referenzformen
+
+Komplexe oder handgezeichnet wirkende Formen dürfen NICHT durch vereinfachte CSS-Konstruktionen ersetzt werden wie:
+
+```text
+border-top
+border-bottom
+transform: rotate(...)
+border-radius
+::before
+::after
+```
+
+wenn dadurch die in der Referenz erkennbare Linienführung verändert wird.
+
+Insbesondere dürfen handgezeichnete Unterstreichungen nicht aus mehreren gedrehten Borders angenähert werden, wenn eine SVG-Lösung möglich ist.
+
+Pseudo-Elemente dürfen weiterhin für einfache geometrische Dekorationen verwendet werden, zum Beispiel:
+
+- rechteckige Flächen
+- Kreise
+- einfache Overlays
+- einfache Farbhintergründe
+
+Nicht jedoch als Ersatz für eine eindeutig geformte SVG-artige Referenzgrafik.
+
+### Referenztreue
+
+Bei dekorativen Formen gilt:
+
+```text
+sichtbare Referenzgeometrie
+> generische CSS-Näherung
+```
+
+Wenn eine SVG-Geometrie aus einer technischen Referenz, einem bereitgestellten DOM-Screenshot oder vorhandenem Quellcode zuverlässig bestimmt werden kann, ist diese gegenüber einer neu erfundenen Form zu bevorzugen.
+
+Wenn nur ein Screenshot vorliegt, rekonstruiere die Form als SVG-Pfad so nah wie möglich an der sichtbaren Geometrie.
+
+Keine externen SVG-CDNs oder Icon-CDNs verwenden.
 
 ## GB-A11Y-001 — Native semantics
 
