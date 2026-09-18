@@ -1,6 +1,5 @@
 # Package files only; merge with existing WordPress repository rules.
 /*
-!/.gitattributes
 !/.agents/
 /.agents/*
 !/.github/
@@ -21,10 +20,6 @@
 /.github/workflows/*
 !/docs/examples/
 /docs/examples/*
-!/docs/history/
-/docs/history/*
-!/docs/source/
-/docs/source/*
 !/references/accordion/
 /references/accordion/*
 !/references/carousel/
@@ -97,22 +92,15 @@
 !/.agents/skills/generateblocks-table/SKILL.md
 !/.agents/skills/generateblocks-tabs/SKILL.md
 !/.agents/skills/generateblocks-visual-to-code/SKILL.md
+!/.gitattributes
 !/.github/workflows/validate.yml
 !/.gitignore
 !/AGENTS.md
 !/CAPABILITIES.md
-!/CHANGELOG-v3.1.1.md
-!/CHANGELOG-v3.1.2.md
-!/CHANGELOG-v3.1.3.md
-!/CHANGELOG-v3.2.0.md
-!/CHANGELOG-v3.md
-!/CODEX-SETUP.md
-!/DEPLOYMENT-NOTES.md
+!/CHANGELOG.md
 !/EXAMPLE-INDEX.md
 !/GenerateBlocks-Master-Formula-v2.md
-!/INSTALL-v3.1.md
 !/PACKAGE-SYNC.md
-!/PLANS.md
 !/PROJECT-CONTEXT.md
 !/PROJECT-RULES.md
 !/README.md
@@ -121,14 +109,10 @@
 !/VALIDATION.md
 !/dist/generateblocks-codex-v3.2.0.sha256
 !/dist/generateblocks-codex-v3.2.0.zip
-!/dist/generatepress-child-v0.3.zip
 !/dist/generatepress-child-v0.4.zip
 !/docs/examples/homepage-package-guide.html
 !/docs/examples/homepage-package-guide.md
-!/docs/history/CHANGELOG-v2.md
-!/docs/source/GenerateBlocks-Visual-to-Code-Finaler-Reasoning-Prompt.md
-!/docs/source/README.md
-!/docs/source/generatepress-child-v0.2-original.zip
+!/docs/examples/homepage-preview.png
 !/references/README.md
 !/references/REFERENCE-MANIFEST.json
 !/references/accordion/faq-accordion01.html
@@ -172,7 +156,6 @@
 !/wp-content/themes/generatepress_child/functions.php
 !/wp-content/themes/generatepress_child/style.css
 # Local files are intentionally never distributed.
-!/docs/examples/homepage-preview.png
 .package-sync*.json
 .local/
 __pycache__/

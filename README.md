@@ -264,4 +264,26 @@ Premium-Plugins werden nicht mitveröffentlicht.
 
 Weiterführend: [Projektkontext](PROJECT-CONTEXT.md), [Regeln](PROJECT-RULES.md),
 [Referenzübersicht](EXAMPLE-INDEX.md), [Prüfgrenzen](VALIDATION.md),
-[Änderungen in 3.2.0](CHANGELOG-v3.2.0.md).
+[Änderungsverlauf](CHANGELOG.md).
+
+
+## 10. Welche Dateien gehören zum Paket?
+
+| Bereich | Zweck |
+|---|---|
+| `README.md`, `START-HIER.cmd` | Einstieg, Einrichtung und Nutzung. |
+| `AGENTS.md`, `PROJECT-RULES.md`, `PROJECT-CONTEXT.md` | Aktive Projektanweisungen und untersuchter Versionsstand. |
+| `GenerateBlocks-Master-Formula-v2.md`, `EXAMPLE-INDEX.md`, `CAPABILITIES.md` | Technische Arbeitsweise, Referenzauswahl und unterstützte Blockfamilien. |
+| `.agents/skills/`, `references/` | Benötigte Skills und technische Blockvorlagen. |
+| `tools/`, `VALIDATION.md` | Prüfungen, Tests, Export und Paketbau. Tests bleiben enthalten, weil die gemeinsame Prüfroutine sie ausführt. |
+| `PACKAGE-SYNC.md`, `TREE.txt` | Pflege zweier Kopien und explizites Dateiinventar. |
+| `wp-content/themes/generatepress_child/` | Aktuelle Theme-Quelldateien. |
+| `docs/examples/` | Anleitung als native Blöcke, Prüfbericht und README-Screenshot. |
+| `dist/` | Aktuelles Gesamtpaket mit Prüfsumme und aktuelles Child-Theme-ZIP. |
+| `.github/`, `.gitignore`, `.gitattributes` | Automatische GitHub-Prüfungen und verlässliche Versionierung. |
+| `CHANGELOG.md` | Kurzer gemeinsamer Änderungsverlauf; für die Ausführung nicht erforderlich. |
+
+Historische Einzel-Changelogs, alte Theme-ZIPs, archivierte Ausgangsprompts und
+doppelte Installationsanleitungen gehören nicht in das aktuelle Paket.
+Für frühere Stände steht die Git-Historie zur Verfügung. Lokale Arbeitspläne
+bei Bedarf unter `.local/` ablegen; sie werden nicht veröffentlicht.
