@@ -419,3 +419,10 @@ AND honest validation report
 ```
 
 Runtime-dependent checks remain open until they are actually executed.
+
+## Features with dependencies beyond post_content
+
+Use `PLUGIN-FEATURES.md` for navigation, forms, overlays/conditions, shared styles
+and GP Premium placement. Model the result as block content plus required real
+records, definitions and settings. Preserve native interaction and validate the
+save/render contract; source inventory alone is not serialization proof.

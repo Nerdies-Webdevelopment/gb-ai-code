@@ -488,3 +488,12 @@ MUST NOT modify:
 - unrelated third-party plugins
 
 Project-specific theme changes belong in the GeneratePress Child theme.
+
+## GB-DEPENDENCY-001 — Database-backed plugin features
+
+Source availability MUST NOT be reported as active configuration. For Forms,
+Overlays, Conditions, menus, global styles and GP Elements, distinguish portable
+content from required records, definitions and settings. Preserve actual IDs;
+MUST NOT invent missing references or claim that a page export transfers its
+records. Missing setup MUST be listed in the result. Display conditions MUST NOT
+be treated as authorization. Consult `PLUGIN-FEATURES.md` for source evidence.

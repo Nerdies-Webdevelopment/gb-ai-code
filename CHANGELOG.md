@@ -1,5 +1,14 @@
 # Änderungsverlauf
 
+## 18.09.2026 – Plugin-Erweiterung des Pakets 3.2.0
+
+- GenerateBlocks 2.4.1, Pro 2.7.1 und GP Premium 2.5.6 lokal untersucht.
+- Fünf Skills für Navigation, Forms, Overlays/Conditions, globale Styles und GP Premium.
+- Dynamic Tags, Pagination, Leerzustände und Meta-/Options-Repeater ergänzt.
+- Lesender Plugin-Scanner, portabler Quellinventar-Bericht und Fehlertests ergänzt.
+- Routing und Abhängigkeiten dokumentiert; keine Plugin-/Theme-Änderungen,
+  Aktivierung von Website-Funktionen oder behauptete Runtime-Validierung.
+
 ## 3.2.0 – portables WordPress-Projektpaket
 
 - Vollständige deutsche README mit Abhängigkeiten, Installation und Nutzung.

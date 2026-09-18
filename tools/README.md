@@ -92,3 +92,20 @@ It checks heading/paragraph/span size utilities and native class overrides at
 1440, 768 and 390px. This is an isolated browser test, not a live WordPress test.
 
 The Child Theme tests also verify that the current v0.4 ZIP matches its source.
+
+## `inspect_plugin_features.py`
+
+Read-only source inventory of all three plugins; no WordPress bootstrap, database,
+configuration or network access.
+
+```powershell
+python tools/inspect_plugin_features.py --root C:/path/to/wordpress
+python tools/inspect_plugin_features.py --root C:/path/to/wordpress --json
+```
+
+Lists metadata names/attributes/parents, tags from the inspected registration
+files, GP module switches and Pro source defaults. Missing/malformed source
+returns exit code 1. This is not an active block registry or save-markup validator;
+legacy/PHP/filter registrations may be absent. Defaults are not live settings.
+Snapshot: `docs/plugin-source-inventory.json`; guidance: `PLUGIN-FEATURES.md`.
+Scanner regression tests run with the existing full suite.

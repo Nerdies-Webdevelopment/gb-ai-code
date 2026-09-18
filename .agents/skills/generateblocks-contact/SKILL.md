@@ -54,3 +54,11 @@ This tree is orientation only. Exact version-dependent attributes/classes/save m
 - Preserve semantic responsive reading order.
 - Do not invent IDs, URLs, hidden content, or Pro serialization.
 - Run `python tools/validate_gb_block.py` on created/changed HTML when applicable.
+
+## Native Pro form option
+
+For native fields/actions use `generateblocks-forms` and the Forms section of
+`PLUGIN-FEATURES.md`. This skill handles the surrounding layout. Preserve an
+existing shortcode when requested. Pro Forms require the feature and a real form
+record; the contact reference does not require all projects to use a third-party
+form plugin.

@@ -56,3 +56,14 @@ This tree is orientation only. Exact version-dependent attributes/classes/save m
 - Preserve semantic responsive reading order.
 - Do not invent IDs, URLs, hidden content, or Pro serialization.
 - Run `python tools/validate_gb_block.py` on created/changed HTML when applicable.
+
+## Additional inspected data features
+
+Read the Query/dynamic-content section of `PLUGIN-FEATURES.md` for Dynamic Tags,
+`inheritQuery`, instant pagination, no-results, post-meta/option repeaters or ACF.
+Inspect current metadata/callbacks before serialization. Native
+`query-page-numbers` and `query-no-results` cover applicable output states.
+Pro adds `post_meta`/`option` queries and `loop_item`/`loop_index` tags. Use actual
+field schemas and handle missing values. Do not assume ACF exists or copy legacy
+query-loop attributes into modern Query. For archive replacement via GP Elements
+also use `generatepress-premium`.

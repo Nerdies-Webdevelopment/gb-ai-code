@@ -133,3 +133,19 @@ current design target/tokens
 No reference in this supplied set is promoted to runtime-validated unless `references/REFERENCE-MANIFEST.json` explicitly records the required evidence.
 
 A technically useful reference may still contain legacy warnings.
+
+## Additional plugin workflows
+
+Read the relevant section of `PLUGIN-FEATURES.md` for these tasks:
+
+| Task | Skill | Required evidence |
+|---|---|---|
+| Navigation / Mega Menu | `generateblocks-navigation` | Current save/render + menu/overlay records |
+| Native Forms | `generateblocks-forms` | Feature enabled + form record + real embedding ID |
+| Overlays / Conditions | `generateblocks-display` | Current trigger/render contract + real records |
+| Global classes / Patterns / Assets | `generateblocks-global-styles` | Actual definitions + transfer dependencies |
+| Dynamic tags / pagination / repeaters | `generateblocks-query-loop` | Current callbacks + real query/field schema |
+| GP Premium Elements / modules | `generatepress-premium` | Active module + placement/display metadata |
+
+These are source notes, not new HTML reference entries. Existing reference
+statuses in `references/REFERENCE-MANIFEST.json` remain unchanged.

@@ -72,6 +72,22 @@ If no visual reference is available for an explicitly visual conversion task, as
 
 Do not invent visual geometry before the image is supplied.
 
+### Additional plugin features
+
+For native features beyond the HTML references, read only the relevant section
+of `PLUGIN-FEATURES.md` and use the focused skill:
+
+- Navigation / Mega Menu → `$generateblocks-navigation`
+- Native Pro Forms → `$generateblocks-forms`
+- Overlays / display conditions → `$generateblocks-display`
+- Global classes / patterns / assets → `$generateblocks-global-styles`
+- GP Premium Elements / theme modules → `$generatepress-premium`
+- Dynamic tags / meta repeaters / pagination → `$generateblocks-query-loop`
+
+These are source workflows, not runtime-validated templates. A read-only inventory
+is available via `python tools/inspect_plugin_features.py --root <wordpress-root>`.
+Source presence/defaults do not prove activation.
+
 ### Existing block repair
 
 Preserve valid IDs, content, hierarchy, and project conventions unless the requested fix requires a change. Prefer a focused repair over a rewrite.

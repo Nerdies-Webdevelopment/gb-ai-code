@@ -182,6 +182,22 @@ Die verlinkten ZIPs müssen im `dist`-Ordner der Zielinstallation vorhanden sein
 Die ursprüngliche Vorlage unter `docs/examples` enthält Download-Pfade für eine
 Installation direkt an der Domain-Wurzel; für Unterordner den Export verwenden.
 
+## Zusätzliche Plugin-Funktionen
+
+Neue Arbeitsanleitungen decken Pro-Navigation/Mega Menus, native Formulare,
+Overlays/Anzeigebedingungen, globale Klassen/Muster und GP Premium Elements ab.
+Query-Anleitungen ergänzen Dynamic Tags, Pagination, Leerzustände und Repeater.
+Quellbelege und Grenzen: [Plugin-Funktionen](PLUGIN-FEATURES.md).
+
+```powershell
+python tools/inspect_plugin_features.py
+```
+
+In einer Paketkopie ohne Plugins `--root C:/pfad/zur/wordpress-installation`
+angeben. Pro Forms sind im untersuchten Quellcode standardmäßig ausgeschaltet.
+Die Erweiterung aktiviert keine Module und ändert keine Website-Einstellungen.
+Gutenberg-/Frontend-Tests bleiben für konkrete erzeugte Blöcke nötig.
+
 ## 6. Werkzeuge
 
 | Befehl | Aufgabe |

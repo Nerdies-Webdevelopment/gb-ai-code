@@ -155,6 +155,25 @@
 !/wp-content/themes/generatepress_child/README.md
 !/wp-content/themes/generatepress_child/functions.php
 !/wp-content/themes/generatepress_child/style.css
+!/.agents/skills/generateblocks-navigation/
+/.agents/skills/generateblocks-navigation/*
+!/.agents/skills/generateblocks-navigation/SKILL.md
+!/.agents/skills/generateblocks-forms/
+/.agents/skills/generateblocks-forms/*
+!/.agents/skills/generateblocks-forms/SKILL.md
+!/.agents/skills/generateblocks-display/
+/.agents/skills/generateblocks-display/*
+!/.agents/skills/generateblocks-display/SKILL.md
+!/.agents/skills/generateblocks-global-styles/
+/.agents/skills/generateblocks-global-styles/*
+!/.agents/skills/generateblocks-global-styles/SKILL.md
+!/.agents/skills/generatepress-premium/
+/.agents/skills/generatepress-premium/*
+!/.agents/skills/generatepress-premium/SKILL.md
+!/PLUGIN-FEATURES.md
+!/docs/plugin-source-inventory.json
+!/tools/inspect_plugin_features.py
+!/tools/test_inspect_plugin_features.py
 # Local files are intentionally never distributed.
 .package-sync*.json
 .local/

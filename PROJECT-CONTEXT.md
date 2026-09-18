@@ -12,9 +12,9 @@ Rules belong in `PROJECT-RULES.md`. General construction principles belong in
 
 ```yaml
 context_schema: 3
-last_source_inspection: 2026-09-06
+last_source_inspection: 2026-09-18
 package_revision: 3.2.0
-last_packaged: 2026-09-06
+last_packaged: 2026-09-18
 
 child_theme:
   packaged_source: wp-content/themes/generatepress_child/
@@ -38,8 +38,8 @@ The corrected Child Theme source **is included** in this repository and has
 been statically inspected.
 
 The inspected reference installation contains the GeneratePress / GenerateBlocks /
-GenerateBlocks Pro / GP Premium sources. Their version headers were read on
-2026-09-06. The Desktop package copy does not bundle these plugins; these facts describe
+GenerateBlocks Pro / GP Premium sources. Their version headers were rechecked on
+2026-09-18. The Desktop package copy does not bundle these plugins; these facts describe
 the source installation, not plugin presence in every package copy.
 This inspection does not establish active plugins, the active theme, or
 Gutenberg compatibility. Run `python tools/check_environment.py` after updates.
@@ -240,8 +240,13 @@ Carousel
 Navigation / Mega Menu
 ```
 
-Navigation / Mega Menu currently has no reference in this package and is not
-considered safely serializable from the package alone. See `CAPABILITIES.md`.
+Navigation / Mega Menu now has a source workflow but no validated saved HTML
+reference. Exact serialization still requires current implementation/export.
+Further inspected capabilities include Forms, Overlays, Conditions, Global Styles,
+Dynamic Tags and GP Premium Elements/modules. See `PLUGIN-FEATURES.md`,
+`docs/plugin-source-inventory.json` and `CAPABILITIES.md`.
+Pro source defaults Forms off and Overlays/Block Conditions on. Live settings
+were not read; no feature was activated during the package inspection.
 
 ## GenerateBlocks admin integration in the Child Theme
 

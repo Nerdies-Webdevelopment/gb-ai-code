@@ -1,0 +1,656 @@
+{
+  "schema_version": 1,
+  "scope": "source_metadata_only",
+  "runtime_verified": false,
+  "plugins": {
+    "generateblocks": {
+      "version": "2.4.1",
+      "activation": "not_checked",
+      "blocks": [
+        {
+          "name": "generateblocks/element",
+          "source": "wp-content/plugins/generateblocks/dist/blocks/element/block.json",
+          "attributes": [
+            "align",
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks/loop-item",
+          "source": "wp-content/plugins/generateblocks/dist/blocks/loop-item/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [
+            "generateblocks/looper"
+          ],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks/looper",
+          "source": "wp-content/plugins/generateblocks/dist/blocks/looper/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [],
+          "ancestor": [
+            "generateblocks/query"
+          ]
+        },
+        {
+          "name": "generateblocks/media",
+          "source": "wp-content/plugins/generateblocks/dist/blocks/media/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "linkHtmlAttributes",
+            "mediaId",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks/query",
+          "source": "wp-content/plugins/generateblocks/dist/blocks/query/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "inheritQuery",
+            "paginationType",
+            "query",
+            "queryType",
+            "showTemplateSelector",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks/query-no-results",
+          "source": "wp-content/plugins/generateblocks/dist/blocks/query-no-results/block.json",
+          "attributes": [],
+          "parent": [],
+          "ancestor": [
+            "generateblocks/query"
+          ]
+        },
+        {
+          "name": "generateblocks/query-page-numbers",
+          "source": "wp-content/plugins/generateblocks/dist/blocks/query-page-numbers/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "midSize",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [],
+          "ancestor": [
+            "generateblocks/query"
+          ]
+        },
+        {
+          "name": "generateblocks/shape",
+          "source": "wp-content/plugins/generateblocks/dist/blocks/shape/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "html",
+            "htmlAttributes",
+            "styles",
+            "uniqueId"
+          ],
+          "parent": [],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks/text",
+          "source": "wp-content/plugins/generateblocks/dist/blocks/text/block.json",
+          "attributes": [
+            "content",
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "icon",
+            "iconLocation",
+            "iconOnly",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [],
+          "ancestor": []
+        }
+      ],
+      "dynamic_tags_in_registration_file": [
+        "author_archives_url",
+        "author_avatar_url",
+        "author_meta",
+        "comments_count",
+        "comments_url",
+        "featured_image",
+        "media",
+        "next_posts_page_url",
+        "post_date",
+        "post_excerpt",
+        "post_meta",
+        "post_permalink",
+        "post_title",
+        "previous_posts_page_url",
+        "term_list"
+      ]
+    },
+    "generateblocks-pro": {
+      "version": "2.7.1",
+      "activation": "not_checked",
+      "blocks": [
+        {
+          "name": "generateblocks-pro/accordion",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/accordion/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks-pro/accordion-content",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/accordion-content/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [
+            "generateblocks-pro/accordion-item"
+          ],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks-pro/accordion-item",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/accordion-item/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "openByDefault",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [
+            "generateblocks-pro/accordion"
+          ],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks-pro/accordion-toggle",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/accordion-toggle/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [
+            "generateblocks-pro/accordion-item"
+          ],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks-pro/accordion-toggle-icon",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/accordion-toggle-icon/block.json",
+          "attributes": [
+            "closeIcon",
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "openIcon",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [
+            "generateblocks-pro/accordion-toggle"
+          ],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks-pro/carousel",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/carousel/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "showTemplateSelector",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks-pro/carousel-control",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/carousel-control/block.json",
+          "attributes": [
+            "carouselId",
+            "closeIcon",
+            "content",
+            "controlType",
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "iconLocation",
+            "iconOnly",
+            "openIcon",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [],
+          "ancestor": [
+            "generateblocks-pro/carousel"
+          ]
+        },
+        {
+          "name": "generateblocks-pro/carousel-item",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/carousel-item/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [
+            "generateblocks-pro/carousel-items"
+          ],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks-pro/carousel-items",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/carousel-items/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [],
+          "ancestor": [
+            "generateblocks-pro/carousel"
+          ]
+        },
+        {
+          "name": "generateblocks-pro/carousel-pagination",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/carousel-pagination/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [],
+          "ancestor": [
+            "generateblocks-pro/carousel"
+          ]
+        },
+        {
+          "name": "generateblocks-pro/classic-menu",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/classic-menu/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "menu",
+            "styles",
+            "uniqueId"
+          ],
+          "parent": [
+            "generateblocks-pro/menu-container"
+          ],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks-pro/classic-menu-item",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/classic-menu-item/block.json",
+          "attributes": [
+            "css",
+            "styles",
+            "uniqueId"
+          ],
+          "parent": [
+            "generateblocks-pro/classic-menu"
+          ],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks-pro/classic-sub-menu",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/classic-sub-menu/block.json",
+          "attributes": [
+            "css",
+            "styles",
+            "uniqueId"
+          ],
+          "parent": [
+            "generateblocks-pro/classic-menu"
+          ],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks-pro/form",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/form/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "showTemplateSelector",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks-pro/form-field",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/form-field/block.json",
+          "attributes": [
+            "conditions",
+            "css",
+            "fieldName",
+            "fieldType",
+            "globalClasses",
+            "htmlAttributes",
+            "isRequired",
+            "matchesField",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [],
+          "ancestor": [
+            "generateblocks-pro/form"
+          ]
+        },
+        {
+          "name": "generateblocks-pro/form-field-control",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/form-field-control/block.json",
+          "attributes": [
+            "checkedValue",
+            "css",
+            "defaultValue",
+            "globalClasses",
+            "htmlAttributes",
+            "options",
+            "placeholder",
+            "rows",
+            "styles",
+            "uniqueId"
+          ],
+          "parent": [],
+          "ancestor": [
+            "generateblocks-pro/form-field"
+          ]
+        },
+        {
+          "name": "generateblocks-pro/form-field-label",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/form-field-label/block.json",
+          "attributes": [
+            "content",
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "icon",
+            "iconLocation",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [
+            "generateblocks-pro/form-field"
+          ],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks-pro/form-render",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/form-render/block.json",
+          "attributes": [
+            "formId"
+          ],
+          "parent": [],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks-pro/menu-container",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/menu-container/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks-pro/menu-toggle",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/menu-toggle/block.json",
+          "attributes": [
+            "closeIcon",
+            "content",
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "iconLocation",
+            "iconOnly",
+            "openIcon",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [],
+          "ancestor": [
+            "generateblocks-pro/navigation"
+          ]
+        },
+        {
+          "name": "generateblocks-pro/navigation",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/navigation/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "styles",
+            "subMenuType",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks-pro/site-header",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/site-header/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks-pro/tab-item",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/tab-item/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "styles",
+            "tabItemOpen",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [
+            "generateblocks-pro/tab-items"
+          ],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks-pro/tab-items",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/tab-items/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [
+            "generateblocks-pro/tabs"
+          ],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks-pro/tab-menu-item",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/tab-menu-item/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "styles",
+            "tabItemOpen",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [
+            "generateblocks-pro/tabs-menu"
+          ],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks-pro/tabs",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/tabs/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "showTemplateSelector",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [],
+          "ancestor": []
+        },
+        {
+          "name": "generateblocks-pro/tabs-menu",
+          "source": "wp-content/plugins/generateblocks-pro/dist/blocks/tabs-menu/block.json",
+          "attributes": [
+            "css",
+            "globalClasses",
+            "htmlAttributes",
+            "styles",
+            "tagName",
+            "uniqueId"
+          ],
+          "parent": [
+            "generateblocks-pro/tabs"
+          ],
+          "ancestor": []
+        }
+      ],
+      "dynamic_tags_in_registration_file": [
+        "archive_description",
+        "archive_title",
+        "current_year",
+        "loop_index",
+        "loop_item",
+        "option",
+        "site_logo_url",
+        "site_tagline",
+        "site_title",
+        "site_url",
+        "term_meta",
+        "user_meta"
+      ],
+      "feature_defaults_in_source": {
+        "enable_overlay_panels": true,
+        "enable_block_conditions": true,
+        "enable_forms": false
+      }
+    },
+    "gp-premium": {
+      "version": "2.5.6",
+      "activation": "not_checked",
+      "blocks": [],
+      "module_option_names": [
+        "generate_package_backgrounds",
+        "generate_package_blog",
+        "generate_package_colors",
+        "generate_package_copyright",
+        "generate_package_disable_elements",
+        "generate_package_elements",
+        "generate_package_font_library",
+        "generate_package_hooks",
+        "generate_package_menu_plus",
+        "generate_package_page_header",
+        "generate_package_secondary_nav",
+        "generate_package_sections",
+        "generate_package_site_library",
+        "generate_package_spacing",
+        "generate_package_typography",
+        "generate_package_woocommerce"
+      ]
+    }
+  },
+  "errors": []
+}

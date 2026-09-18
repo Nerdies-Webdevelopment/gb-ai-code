@@ -63,3 +63,11 @@ For version-sensitive Pro structures, inspect current installed plugin implement
 6. Complete GenerateBlocks `post_content`
 7. Validation status
 8. Values still to replace
+
+## Additional native features
+
+For navigation, native forms, overlays, conditions, shared classes or theme-level
+placement, follow the corresponding route in `EXAMPLE-INDEX.md` and read only
+that section of `PLUGIN-FEATURES.md`. Use its focused skill and current save/render
+evidence. These workflows are not validated HTML references. List record/settings
+dependencies separately from the visual reconstruction.
